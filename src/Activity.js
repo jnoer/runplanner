@@ -43,4 +43,27 @@ export default class Activity {
       return `${this.time} min ${this.activityType}`;
     }
   }
+
+  isRunIcon() {
+    return (
+      this.activityType === ActivityType.run ||
+      this.activityType === ActivityType.tempo ||
+      this.activityType === ActivityType.pace ||
+      this.activityType === ActivityType.interval
+    );
+  }
+
+  getRestIcon() {
+    return "burger.svg";
+
+    // const choice = Math.floor(Math.random() * 3);
+    //
+    // if (choice === 0) {
+    //   return "pizza.svg";
+    // } else if (choice === 1) {
+    //   return "burger.svg";
+    // } else {
+    //   return "hot-dog.svg";
+    // }
+  }
 }
