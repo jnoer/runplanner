@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3ff0fa00-0db9-43ca-95a7-fe80f0af8011" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/runplanner.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DatePicker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/weeks.js" afterDir="false" />
+    <list default="true" id="3ff0fa00-0db9-43ca-95a7-fe80f0af8011" name="Changes" comment="More stuff">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Activity.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ActivityType.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ff-mark.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ics.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/weeks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/weeks.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,10 +33,26 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "editorconfig.notification": "lf;",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "last_opened_file_path": "/Users/jasonnoer/Google Drive/Programming/runplanner/public",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "nodejs_package_manager_path": "yarn",
+    "prettierjs.PrettierConfiguration.Package": "/Users/jasonnoer/Google Drive/Programming/runplanner/node_modules/prettier",
+    "settings.editor.selected.configurable": "Settings.JavaScript"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -43,8 +61,20 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1660766105628</updated>
+      <workItem from="1660825774151" duration="22856000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial commit">
+      <created>1660787086062</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1660787086062</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -56,5 +86,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit" />
+    <MESSAGE value="More stuff" />
+    <option name="LAST_COMMIT_MESSAGE" value="More stuff" />
   </component>
 </project>
