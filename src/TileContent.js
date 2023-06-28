@@ -4,7 +4,7 @@ import { React } from "react";
 
 export default function tileContent(dates, raceDate) {
   // eslint-disable-next-line react/display-name
-  return ({ actziveStartDate, date, view }) => {
+  return ({ activeStartDate, date, view }) => {
     // Add class to tiles in month view only
     if (view === "month") {
       // Check if a date React-Calendar wants to check is on the list of dates to add class to

@@ -40,7 +40,8 @@ export function buildDateArray(startDate, clickedDate, dates) {
   let week = 1;
   let day = 1;
 
-  const datesResult = [...dates];
+  // const datesResult = [...dates]; // Why are we adding? Don't we always start with an empty array?
+  const datesResult = [];
 
   const currentDate = new Date(startDate);
 
