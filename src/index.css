@@ -1,0 +1,92 @@
+/*Custom styling and overrides for react-calendar.*/
+
+@font-face {
+    font-family: "FF Mark";
+    src: url("ff-mark.woff2");
+}
+
+body {
+  margin: 0;
+  font-family: 'FF Mark', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+body span.text2 {
+    color: #040505;
+    font-size: 28px;
+    letter-spacing: 0;
+    line-height: 45px;
+    font-family: FF Mark !important;
+    display: inline-block;
+}
+
+img {
+    width: 25px;
+    height: 25px;
+    margin-top: -5px;
+}
+
+img.finish {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 0px;
+}
+
+/*.activity-day {*/
+/*    background: lightgreen !important;*/
+/*    border: 1px white solid !important;*/
+/*    !*padding: 5px;*!*/
+/*    !*border: 1px solid black;*!*/
+/*}*/
+
+.race-day {
+    background: white !important;
+    border: 1px white solid !important;
+}
+
+/*.race-day activity-content {*/
+/*    margin-top: 20px;*/
+/*    font-size: 40px;*/
+/*}*/
+
+/*
+    react-calendar overrides
+*/
+
+.schedule.react-calendar {
+    width: 700px !important;
+}
+
+/*.activity-content {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    align-items: center;*/
+/*    !*color: white;*!*/
+/*    font-weight: bolder;*/
+/*    font-size: 28px;*/
+/*    margin-top: 60px;*/
+/*}*/
+
+.react-calendar__tile abbr {
+    float:left;
+    margin-bottom: 10px;
+}
+
+.react-calendar__tile {
+    flex-direction: column;
+    border: 1px solid black !important;
+    border-collapse: collapse !important;
+    max-width: 100%;
+    padding: 10px 6.6667px;
+    background: none;
+    text-align: center;
+    line-height: 16px;
+    /*color:white;*/
+    font-size: 20px;
+    min-height: 100px;
+}
+
+.react-calendar__month-view__days__day--weekend {
+    color: black;
+}
