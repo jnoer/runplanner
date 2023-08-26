@@ -1,6 +1,4 @@
-// import logo from "./logo.svg";
-// import "./App.css";
-import { ics } from "./ics";
+import { ics } from "./utilities/ics.js";
 import Calendar from "react-calendar";
 import { React, useState } from "react";
 import dayjs, { Dayjs } from "dayjs";
@@ -8,7 +6,6 @@ import TextField from "@mui/material/TextField";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { DatePicker } from "@mui/x-date-pickers/DatePicker";
-
 
 // TODO: Bug - Every time we navigate to the next calendar picker month, a new date is selected.
 // TODO: Calendar is showing two months at the same time. We want only one.
@@ -27,7 +24,7 @@ import {
 import { ActivityType } from "./ActivityType";
 import Button from "@mui/material/Button";
 import tileContent from "./TileContent";
-import { buildDateArray } from "./calendar-utils";
+import { buildDateArray } from "./utilities/calendar-utils";
 
 function App() {
   const [raceDate, setRaceDate] = useState(dayjs());

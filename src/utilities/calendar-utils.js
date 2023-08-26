@@ -6,7 +6,7 @@ import {
   PaceAndTempActivities,
   ShortRunActivities,
   ShortRunIncreasingActivities,
-} from "./weeks";
+} from "../weeks";
 
 export function getActivitiesForDay(day, week) {
   let activities = null;

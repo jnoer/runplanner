@@ -5,7 +5,7 @@ import "./reset.css";
 import "react-calendar/dist/Calendar.css";
 import "./index.css"; // Has overrides for Calendar.css
 
-import App from "./App";
+import App from "./App.js";
 // import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
