@@ -14,9 +14,9 @@ export default class Activity {
     this.time = time;
   }
 
-  toComponent() {
-    return <>{this.toText()}</>;
-  }
+  // toComponent() {
+  //   return <>{this.toText()}</>;
+  // }
 
   toText() {
     if (this.activityType === ActivityType.rest) {
