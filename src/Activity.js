@@ -1,6 +1,6 @@
 // pace is 5k or nothing.
 import { React } from "react";
-import { ActivityType } from "./ActivityType";
+import ActivityType from "./ActivityType";
 
 const distanceUnit = "mi";
 

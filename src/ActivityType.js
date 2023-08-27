@@ -1,4 +1,4 @@
-export const ActivityType = {
+const ActivityType = {
   // run: "run 🏃🏻",
   run: "run",
   rest: "Rest",
@@ -8,3 +8,4 @@ export const ActivityType = {
   restOrEasy: "rest or easy run",
   interval: "interval",
 };
+ export default ActivityType;

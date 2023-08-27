@@ -1,7 +1,7 @@
-import { React } from "react";
 import Activity from "./Activity";
-import { ActivityType } from "./ActivityType";
+import ActivityType from "./ActivityType";
 
+// These are split into activities so that we can easily move the activity column in a table
 export const CrossTrainingActivities = [
   {
     week: 1,
@@ -320,7 +320,7 @@ export const ShortRunActivities = [
   },
 ];
 
-export const FridayActivities = [
+export const RestActivities = [
   {
     week: 1,
     activity: new Activity({
