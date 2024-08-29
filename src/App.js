@@ -1,4 +1,3 @@
-import { ics } from "./utilities/ics.js";
 import Calendar from "react-calendar";
 import { React, useState } from "react";
 import dayjs, { Dayjs } from "dayjs";
