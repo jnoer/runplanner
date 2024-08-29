@@ -19,7 +19,7 @@ const ActivityCategory = {
   longRun: LongRunActivities
 }
 
-// TODO: put this in context so that we can access it in Table.js.
+// TODO: put this in context so that we can access it in DaySelector.js.
 //  In the table, the user will be able to move a category to a different day.
 let activityMapping = {
   1: ActivityCategory.cross,
@@ -53,25 +53,7 @@ export function getActivitiesForDay(dayOfWeek, week) {
 
   // day = (day + 1) % 7; // Long runs on Saturdays
 
-  // TODO: Do mapping with activityMapping
-
   activities = activityMapping[dayOfWeek];
-
-  // if (dayOfWeek === 1) { // 1 == Monday
-  //   activities = CrossTrainingActivities;
-  // } else if (dayOfWeek === 2) {
-  //   activities = ShortRunIncreasingActivities;
-  // } else if (dayOfWeek === 3) {
-  //   activities = PaceAndTempActivities;
-  // } else if (dayOfWeek === 4) {
-  //   activities = ShortRunActivities;
-  // } else if (dayOfWeek === 5) {
-  //   activities = RestActivities;
-  // } else if (dayOfWeek === 6) {
-  //   activities = PaceActivities;
-  // } else if (dayOfWeek === 0) {
-  //   activities = LongRunActivities;
-  // }
 
   if (activities) {
     return activities.find((activity) => {

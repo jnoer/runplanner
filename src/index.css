@@ -55,7 +55,8 @@ img.finish {
 */
 
 .schedule.react-calendar {
-    width: 700px !important;
+    /*width: 700px !important;*/
+    width: 100%;
 }
 
 /*.activity-content {*/

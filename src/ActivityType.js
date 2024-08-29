@@ -1,7 +1,9 @@
+// Provides user copy for an activity type
 const ActivityType = {
   // run: "run 🏃🏻",
+  longRun: "long run",
   run: "run",
-  rest: "Rest",
+  rest: "rest",
   pace: "pace",
   tempo: "tempo",
   cross: "cross",

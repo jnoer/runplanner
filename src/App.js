@@ -7,7 +7,7 @@ import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { DatePicker } from "@mui/x-date-pickers/DatePicker";
 
-// TODO: Bug - Every time we navigate to the next calendar picker month, a new date is selected.
+// TODO: Instead of a predefined calendar, we should generate one based on the initial week.
 // TODO: Calendar is showing two months at the same time. We want only one.
 // TODO: After the user selects a date, the calendar needs to jump to the training start date.
 // TODO: Save data in case page is refreshed?
@@ -16,7 +16,7 @@ import ActivityType from "./ActivityType";
 import Button from "@mui/material/Button";
 import {buildDateArray, getTrainingStartDate} from "./utilities/calendar-utils";
 import saveIcs from "./utilities/save-ics";
-import Table from "./Table";
+import DaySelector from "./DaySelector";
 
 function App() {
   const [raceDate, setRaceDate] = useState(dayjs());
@@ -114,7 +114,6 @@ function App() {
 
   return (
     <main>
-      <div style={{float:"left"}}>
       <span className={"text2"}>
         I&apos;m a ___ runner and I&apos;m running a ___.
       </span>
@@ -125,6 +124,7 @@ function App() {
       <span className={"text2"}>
         My race date is {" "}
       </span>
+
       <LocalizationProvider dateAdapter={AdapterDayjs}>
         <DatePicker
           value={raceDate}
@@ -134,12 +134,16 @@ function App() {
           renderInput={(params) => <TextField {...params} />}
         />
       </LocalizationProvider>
+
       <br />
       {/*Race date: {raceDate && raceDate.toLocaleDateString()} <br />*/}
       {/*Training start date:{" "}*/}
       {/*{trainingStartDate && trainingStartDate.toLocaleDateString()} <br />*/}
 
-      {/*Takes a Date*/}
+      <DaySelector></DaySelector>
+
+
+          {/*Takes a Date*/}
       {/*In most cases, we recommend using controlled components to implement forms.*/}
       <Calendar
         className={"schedule"}
@@ -163,10 +167,6 @@ function App() {
       <Button variant="contained" onClick={saveIcs(dates)}>
         Download calendar file
       </Button>
-      </div>
-        <div>
-            <Table></Table>
-        </div>
     </main>
   );
 }
