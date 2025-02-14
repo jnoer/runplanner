@@ -6,6 +6,7 @@ import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { DatePicker } from "@mui/x-date-pickers/DatePicker";
 
+// TODO: check out animations. See fatty15.com
 // TODO: Instead of a predefined calendar, we should generate one based on the initial week.
 // TODO: Calendar is showing two months at the same time. We want only one.
 // TODO: After the user selects a date, the calendar needs to jump to the training start date.
